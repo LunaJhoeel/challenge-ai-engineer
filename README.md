@@ -1,14 +1,16 @@
 # challenge-ai-engineer
 
-Run in devcontainer and with an .env
+Agregar un archivo .env con una key de la API de OpenAI
+
+Ejecutar con devcontainer o con venv
 ```
 uvicorn main:app --reload
 ```
-Or build local image
+O construir localmente
 ```
 docker buildx build -t rag_image .
 ```
-and run local container
+y ejecutar pasandole un .env
 ```
 docker run --env-file .env --name rag_container -p 8080:8000 rag_image
 ```
