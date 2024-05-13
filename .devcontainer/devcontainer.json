@@ -1,0 +1,9 @@
+{
+    "name": "Challenge AI Engineer",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "postCreateCommand": "echo 'Container is ready!'",
+    "remoteUser": "root"
+}
